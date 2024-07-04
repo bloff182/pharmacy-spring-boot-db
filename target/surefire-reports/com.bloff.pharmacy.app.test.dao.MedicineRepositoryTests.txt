@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.bloff.pharmacy.app.test.dao.MedicineRepositoryTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.094 s <<< FAILURE! - in com.bloff.pharmacy.app.test.dao.MedicineRepositoryTests
+should_find_medicines_by_username  Time elapsed: 0.086 s  <<< ERROR!
+javax.validation.UnexpectedTypeException: HV000030: No validator could be found for constraint 'javax.validation.constraints.Size' validating type 'java.time.LocalDate'. Check configuration for 'expDate'
+	at com.bloff.pharmacy.app.test.dao.MedicineRepositoryTests.loadData(MedicineRepositoryTests.java:57)
+	at com.bloff.pharmacy.app.test.dao.MedicineRepositoryTests.setUp(MedicineRepositoryTests.java:30)
+

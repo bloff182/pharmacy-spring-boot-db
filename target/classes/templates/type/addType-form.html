@@ -1,0 +1,46 @@
+<!DOCTYPE Html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+		crossorigin="anonymous">
+
+	<title>Type add form</title>	
+</head>
+<body class="container bg-dark text-light" sec:authorize="hasRole('ROLE_ADMIN')">
+	<div class="container">
+		<div class="m-1">
+			
+			<div class="w-50 float-left"><h2>Type - form for add</h2></div>
+			<div class="w-50 float-left">
+			
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<hr>
+		<div class="m-2">
+			<form th:action="@{/types/saveType}" th:object="${type}" method="post">
+				<input type="hidden" th:field="*{id}">
+				<div>
+					<div>
+						<p><h4> Type name: </h4>
+						<input type="text" th:field="*{typeName}">
+					</div>
+					<div th:if="${#fields.hasErrors('typeName')}"
+						style="margin-bottom: 25px" class="text-danger">
+						<ul>
+							<li th:each="err : ${#fields.errors('typeName')}" th:text="'Ohhh noooo - Type name ' + ${err}" />
+						</ul>						
+					</div>
+				</div>
+				<div class="mt-2">
+					<button type="submit" class="btn btn-outline-success">save</button>
+				</div>
+			</form>
+		</div>
+		<div class="m-2">
+			<a class="btn btn-outline-warning" th:href="@{/types/listTypes}">Cancel</a>
+		</div>
+	</div>
+</body>
+</html>

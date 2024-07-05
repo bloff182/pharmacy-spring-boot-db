@@ -1,0 +1,13 @@
+com\bloff\pharmacy\app\test\controller\AdminControllerTests.class
+com\bloff\pharmacy\app\test\service\TypeServiceMockTests.class
+com\bloff\pharmacy\app\test\PharmacyApplicationTests.class
+com\bloff\pharmacy\app\test\service\UserServiceTests.class
+com\bloff\pharmacy\app\test\dao\ProducentRepositoryTests.class
+com\bloff\pharmacy\app\test\service\DestinyServiceTests.class
+com\bloff\pharmacy\app\test\dao\MedicineRepositoryTests.class
+com\bloff\pharmacy\app\test\dao\UserRepositoryTests.class
+com\bloff\pharmacy\app\test\dao\TypeRepositoryTests.class
+com\bloff\pharmacy\app\test\dao\DestinyRepositoryTests.class
+com\bloff\pharmacy\app\test\dao\RoleRepositoryTests.class
+com\bloff\pharmacy\app\test\controller\TypeControllerTests.class
+com\bloff\pharmacy\app\config\AppConfigTests.class
